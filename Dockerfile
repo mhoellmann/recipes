@@ -11,7 +11,14 @@ RUN apt-get install -y \
     python3 \
     python3-pip \
     postgresql-client \
-    gettext
+    gettext \
+    libpq-dev
+
+RUN apt-get install -y \
+    zlib1g-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    libjpeg-dev
 
 RUN pip3 install --upgrade pip
 
